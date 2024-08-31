@@ -249,8 +249,9 @@ rgbToHsv r g b =
 hsvToRgb : Float -> Float -> Float -> (Int, Int, Int)
 hsvToRgb h s v =
     let
-        hi = floor (h / 60)
-        f = h / 60 - toFloat hi
+        normalizedHue = if h >= 360 then 0 else h  -- Normalize hue to [0, 360)
+        hi = floor (normalizedHue / 60)
+        f = normalizedHue / 60 - toFloat hi
         p = v * (1 - s)
         q = v * (1 - f * s)
         t = v * (1 - (1 - f) * s)

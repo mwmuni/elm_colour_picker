@@ -4,6 +4,9 @@ Welcome to the Elm Colour Picker project! This interactive tool allows you to ex
 
 ## [Try it out here!](https://mwmuni.github.io/elm_colour_picker/)
 
+![Page preview](https://github.com/user-attachments/assets/70523243-ae14-4e31-a4e8-27d744f9491a)
+
+
 ## Features
 
 - **Interactive Color Selection**: Choose colors using RGB sliders
